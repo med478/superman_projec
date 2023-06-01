@@ -1,13 +1,4 @@
-@font-face {
-  font-family: Lobster;
-  src: url(../asset/Fonts/Lobster-Regular.ttf);
-}
-
-@font-face {
-  font-family: Kanit;
-  src: url(../asset/Fonts/Kanit-Light.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap%27');
 :root {
   --color-bg: #52a0bd;
   --color-h1: #fafafa;
@@ -23,7 +14,11 @@
 html {
   font-size: 62.5%;
 }
-
+body{
+  font: 1.6rem sans-serif;
+  letter-spacing: .1rem;
+  line-height: 1.6;
+}
 * {
   margin: 0rem;
   padding: 0;
@@ -32,20 +27,23 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  font-family: Kanit;
-  font-size: 1.7rem;
+button{
+  font-size: inherit;
+  border: 0;
+  line-height: 3.5rem;
+  color: #fff;
 }
+
 
 h1,
 h1 > sup,
 h2 {
-  font-family: Lobster;
+  font-family: 'Lobster';
   font-size: 4rem;
 }
 
 h2 {
-  font-family: Lobster;
+  font-family: 'Lobster';
   font-size: 3rem;
 }
 
@@ -139,22 +137,24 @@ a {
   font-style: normal;
 }
 
-h1 {
+/*-----------------------Padding, Marging, Width and Height-----------------------*/
+h1{
   padding: 1.5rem;
+  padding-bottom: 2rem; /* Ajout de padding-bottom */
 }
-
-h2 {
+h2{
   padding: 0.7rem;
+  padding-bottom: 1.5rem; /* Ajout de padding-bottom */
 }
-
-img {
+img{
   width: 100%;
+  padding-bottom: 1.5rem; /* Ajout de padding-bottom */
+}
+p{
+  padding-top: 0.5rem;
+  padding-bottom: 1rem; /* Augmentation de padding-bottom */
 }
 
-p {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 
 .blockSize {
   max-width: 80rem;
@@ -180,7 +180,7 @@ a {
 .button {
   transition-duration: 0.4s;
   border-radius: 1rem;
-  border: 0rem;
+
 }
 
 .button:hover {
